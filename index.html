@@ -557,9 +557,8 @@
     <div id="password-screen">
         <div class="password-container">
             <h1>🔒 ACCESS</h1>
-            <h3>Your Nickname</h3>
             <div class="password-input-wrapper">
-                <input type="password" id="password-input" placeholder="Enter Password" autocomplete="off">
+                <input type="password" id="password-input" placeholder="Your Nickname" autocomplete="off">
             </div>
             <button class="password-btn" onclick="checkPassword()">
                 <span>UNLOCK</span>
@@ -570,8 +569,8 @@
     <!-- Main Content -->
     <div id="main-content" class="hidden">
         <div class="hero">
-            <h1>JK BOSE</h1>
-            <p>Question Frequency Analysis Dashboard</p>
+            <h1>Class 10th Board Exams Analysis</h1>
+            <p>Question Frequency Analysis </p>
             <div class="stats-bar">
                 <div class="stat-item">
                     <h3 id="total-questions">0</h3>
@@ -611,7 +610,7 @@
             <div class="questions-grid" id="questions-grid"></div>
         </div>
 
-        <div class="watermark">Research by: Official Haadi</div>
+        <div class="watermark">Official Haadi</div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -635,7 +634,7 @@
             const input = document.getElementById('password-input');
             const password = input.value;
             
-            if (password === 'Peacock') {
+            if (password === 'Peacock','peacock', 'PEACOCK') {
                 const screen = document.getElementById('password-screen');
                 screen.classList.add('fade-out');
                 
@@ -803,3 +802,4 @@
 </body>
 
 </html>
+
